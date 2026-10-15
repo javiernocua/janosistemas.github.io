@@ -1,0 +1,375 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PC Soluciones | Computadores y CCTV</title>
+<style>
+:root {
+  --azul: #2563eb;
+  --oscuro: #0f172a;
+  --fondo: #f1f5f9;
+  --verde: #16a34a;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--oscuro);
+  background: white;
+  line-height: 1.6;
+}
+.container { width: 92%; max-width: 1150px; margin: auto; }
+header {
+  background: white;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #ddd;
+  z-index: 10;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.logo { font-size: 22px; font-weight: bold; color: var(--azul); }
+.links { display: flex; gap: 18px; flex-wrap: wrap; }
+a { text-decoration: none; color: inherit; }
+.links a:hover { color: var(--azul); }
+.btn {
+  display: inline-block;
+  background: var(--azul);
+  color: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn:hover { opacity: .88; }
+.hero {
+  padding: 75px 0;
+  color: white;
+  background: linear-gradient(120deg, #0f172a, #1d4ed8);
+}
+.hero h1 { font-size: clamp(32px, 5vw, 55px); line-height: 1.15; }
+.hero p { max-width: 650px; font-size: 18px; }
+.hero .btn { background: var(--verde); margin: 8px 8px 0 0; }
+section { padding: 60px 0; }
+.titulo { text-align: center; margin-bottom: 35px; }
+.titulo h2 { font-size: 30px; margin-bottom: 8px; }
+.titulo p { color: #64748b; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.card {
+  padding: 25px;
+  border: 1px solid #e2e8f0;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 5px 20px #0f172a0b;
+}
+.icono { font-size: 38px; }
+.card h3 { margin: 10px 0; }
+.card p { color: #64748b; }
+.fondo { background: var(--fondo); }
+.etiqueta {
+  display: inline-block;
+  padding: 4px 9px;
+  margin: 3px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  border-radius: 5px;
+  font-size: 13px;
+}
+.cta {
+  background: #172554;
+  color: white;
+  padding: 35px;
+  border-radius: 15px;
+  text-align: center;
+}
+.cta p { color: #dbeafe; }
+.contacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 5px 0 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font: inherit;
+}
+textarea { min-height: 110px; }
+label { font-weight: bold; }
+footer {
+  background: var(--oscuro);
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+}
+@media(max-width: 750px) {
+  .grid, .contacto { grid-template-columns: 1fr; }
+  nav { justify-content: center; }
+  .links { justify-content: center; }
+  .hero { padding: 45px 0; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <a class="logo" href="#inicio">💻 PC SOLUCIONES</a>
+      <div class="links">
+        <a href="#servicios">Servicios</a>
+        <a href="#computadores">Computadores</a>
+        <a href="#cctv">CCTV</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <a class="btn" href="#contacto">Cotizar</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="container">
+    <h1>Tecnología, soporte y seguridad para tu negocio</h1>
+    <p>
+      Venta de computadores, mantenimiento, reparación,
+      instalación de cámaras de seguridad CCTV y soporte
+      tecnológico para hogares y empresas.
+    </p>
+    <a class="btn" href="#computadores">Ver computadores</a>
+    <a class="btn" href="#cctv">Soluciones CCTV</a>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="container">
+    <div class="titulo">
+      <h2>Servicios de tecnología</h2>
+      <p>Soluciones informáticas para particulares y empresas.</p>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <div class="icono">🔧</div>
+        <h3>Servicio técnico</h3>
+        <p>Diagnóstico, reparación, limpieza, mantenimiento y solución de fallas en computadores.</p>
+      </article>
+      <article class="card">
+        <div class="icono">⚡</div>
+        <h3>Mejoras de rendimiento</h3>
+        <p>Instalación de SSD, ampliación de RAM, reinstalación de Windows y migración de datos.</p>
+      </article>
+      <article class="card">
+        <div class="icono">🏢</div>
+        <h3>Soporte empresarial</h3>
+        <p>Mantenimiento de equipos, redes, configuración de impresoras y asistencia a usuarios.</p>
+      </article>
+      <article class="card">
+        <div class="icono">🖨️</div>
+        <h3>Impresoras y accesorios</h3>
+        <p>Asesoría en periféricos, monitores, impresoras, almacenamiento y accesorios.</p>
+      </article>
+      <article class="card">
+        <div class="icono">🌐</div>
+        <h3>Redes y conectividad</h3>
+        <p>Configuración de redes, routers, conexión a Internet y diagnóstico de problemas.</p>
+      </article>
+      <article class="card">
+        <div class="icono">💾</div>
+        <h3>Copias de seguridad</h3>
+        <p>Respaldo, traslado y recuperación de información según el estado del dispositivo.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="fondo" id="computadores">
+  <div class="container">
+    <div class="titulo">
+      <h2>Venta de computadores</h2>
+      <p>Equipos para cada necesidad y presupuesto.</p>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <div class="icono">💻</div>
+        <h3>Portátiles</h3>
+        <p>Equipos para estudio, trabajo, oficina y uso personal.</p>
+        <span class="etiqueta">Lenovo</span>
+        <span class="etiqueta">HP</span>
+        <span class="etiqueta">ASUS</span>
+      </article>
+      <article class="card">
+        <div class="icono">🖥️</div>
+        <h3>Computadores de escritorio</h3>
+        <p>Equipos para empresas, negocios, hogar y aplicaciones profesionales.</p>
+        <span class="etiqueta">Oficina</span>
+        <span class="etiqueta">Empresa</span>
+      </article>
+      <article class="card">
+        <div class="icono">⌨️</div>
+        <h3>Componentes y accesorios</h3>
+        <p>Memoria RAM, discos SSD, monitores, teclados y otros complementos.</p>
+        <span class="etiqueta">Actualización</span>
+        <span class="etiqueta">Accesorios</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="cctv">
+  <div class="container">
+    <div class="titulo">
+      <h2>Venta e instalación de CCTV</h2>
+      <p>Sistemas de videovigilancia para hogares, locales comerciales y empresas.</p>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <div class="icono">📹</div>
+        <h3>Cámaras de seguridad</h3>
+        <p>Venta y asesoría en cámaras para interiores y exteriores, según las necesidades del lugar.</p>
+        <span class="etiqueta">Cámaras IP</span>
+        <span class="etiqueta">Analógicas</span>
+      </article>
+      <article class="card">
+        <div class="icono">🎥</div>
+        <h3>DVR y NVR</h3>
+        <p>Grabadores, discos duros para videovigilancia, fuentes de alimentación y accesorios.</p>
+        <span class="etiqueta">Grabación</span>
+        <span class="etiqueta">Monitoreo</span>
+      </article>
+      <article class="card">
+        <div class="icono">🛠️</div>
+        <h3>Instalación y cableado</h3>
+        <p>Montaje de cámaras, canalización, cableado y configuración de grabación.</p>
+        <span class="etiqueta">Residencial</span>
+        <span class="etiqueta">Comercial</span>
+      </article>
+      <article class="card">
+        <div class="icono">📱</div>
+        <h3>Acceso desde el celular</h3>
+        <p>Configuración de visualización remota y aplicación móvil, según la compatibilidad del equipo.</p>
+      </article>
+      <article class="card">
+        <div class="icono">🔍</div>
+        <h3>Mantenimiento CCTV</h3>
+        <p>Diagnóstico de cámaras fuera de línea, revisión de conexiones y mantenimiento preventivo.</p>
+      </article>
+      <article class="card">
+        <div class="icono">🏬</div>
+        <h3>Proyectos empresariales</h3>
+        <p>Asesoría para diseñar soluciones de videovigilancia para oficinas, negocios y conjuntos residenciales.</p>
+      </article>
+    </div>
+    <div style="text-align:center;margin-top:30px">
+      <a class="btn" href="#contacto">Cotizar sistema CCTV</a>
+    </div>
+  </div>
+</section>
+
+<section class="fondo">
+  <div class="container">
+    <div class="cta">
+      <h2>¿Necesitas una solución tecnológica?</h2>
+      <p>Cuéntanos qué equipo, reparación o sistema de cámaras necesitas.</p>
+      <a class="btn" href="#contacto">Solicitar asesoría</a>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="container">
+    <div class="titulo">
+      <h2>Contáctanos</h2>
+      <p>Solicita información o una cotización sin compromiso.</p>
+    </div>
+    <div class="contacto">
+      <div class="card">
+        <h3>PC Soluciones</h3>
+        <p>✉️ <strong>Correo:</strong> tucorreo@gmail.com</p>
+        <p>📱 <strong>WhatsApp:</strong> +57 300 000 0000</p>
+        <p>📍 <strong>Ubicación:</strong> Cúcuta, Norte de Santander</p>
+        <p>🕘 <strong>Horario:</strong> Lunes a sábado</p>
+        <p>Reemplaza los datos de ejemplo por los datos reales de tu negocio.</p>
+      </div>
+      <div class="card">
+        <form id="formulario">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" required placeholder="Tu nombre">
+
+          <label for="correo">Correo electrónico</label>
+          <input id="correo" type="email" required placeholder="tu@email.com">
+
+          <label for="tipo">Servicio que necesitas</label>
+          <select id="tipo">
+            <option>Compra de computador</option>
+            <option>Servicio técnico</option>
+            <option>Soporte empresarial</option>
+            <option>Venta de cámaras CCTV</option>
+            <option>Instalación de cámaras CCTV</option>
+            <option>Mantenimiento CCTV</option>
+            <option>DVR, NVR y accesorios</option>
+            <option>Redes y conectividad</option>
+          </select>
+
+          <label for="mensaje">Detalles de la solicitud</label>
+          <textarea id="mensaje" placeholder="Describe lo que necesitas"></textarea>
+
+          <button class="btn" type="submit">Enviar solicitud por correo</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© <span id="anio"></span> PC Soluciones</p>
+    <p>Venta de computadores · Servicio técnico · CCTV</p>
+  </div>
+</footer>
+
+<script>
+document.getElementById("anio").textContent =
+  new Date().getFullYear();
+
+document.getElementById("formulario").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const nombre = document.getElementById("nombre").value.trim();
+  const correo = document.getElementById("correo").value.trim();
+  const tipo = document.getElementById("tipo").value;
+  const mensaje = document.getElementById("mensaje").value.trim();
+
+  const asunto = encodeURIComponent("Cotización: " + tipo);
+  const cuerpo = encodeURIComponent(
+    "Nombre: " + nombre +
+    "\nCorreo: " + correo +
+    "\nServicio: " + tipo +
+    "\nDetalles: " + mensaje
+  );
+
+  window.location.href =
+    "mailto:tucorreo@gmail.com?subject=" + asunto +
+    "&body=" + cuerpo;
+});
+</script>
+
+</body>
+</html>
